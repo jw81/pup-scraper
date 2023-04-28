@@ -8,7 +8,7 @@ Dockerized [pup](https://github.com/ericchiang/pup) used for scraping HTML
     - removes/deletes the container after it finishes running
   - `-e URL='http://www.google.com`
     - sets an environment variable named `URL` to the value `http://www.google.com` (change this to whatever url you need to scrape)
-  - `-e FILTER='body'
+  - `-e FILTER='body'`
     - sets an environment variable named `FILTER` to the value `body` (change th is to whatever HTML/CSS selectors you need to scrape)
 ## Note
 - If you want to ignore all of the HTML tags and just extract the raw text, you can run the command like this ::
