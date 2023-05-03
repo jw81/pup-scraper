@@ -12,5 +12,5 @@ Dockerized [pup](https://github.com/ericchiang/pup) used for scraping HTML
     - sets an environment variable named `FILTER` to the value `body` (change this to whatever HTML/CSS selectors you need to scrape)
 ## Notes
 - If you want to ignore all of the HTML tags and just extract the raw text, you can run the command like this ::
-  - `docker run -e URL='http://www.google.com' -e FILTER='body text{}' my-pup-scraper`
+  - `docker run --rm -e URL='http://www.google.com' -e FILTER='body text{}' my-pup-scraper`
 - For an example of a more complex HTML/CSS selector, go look at the default value for the `FILTER` environment variable in the `Dockerfile`. [REF](https://github.com/jw81/pup-scraper/blob/main/Dockerfile#L9)
