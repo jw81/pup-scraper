@@ -12,7 +12,7 @@ Dockerized [pup](https://github.com/ericchiang/pup) used for scraping HTML
   - `-e FILTER='body'`
     - sets an environment variable named `FILTER` to the value `body` (change this to whatever HTML/CSS selectors you need to scrape)
 
-### Or if you want to just run the Docker image stored in DockerHub ::
+### Or if you want to just run the [Docker image stored in DockerHub](https://hub.docker.com/repository/docker/jeffreywallace81/pup-scraper/general) ::
 - run `docker run --rm -e URL='http://www.google.com' -e FILTER='body' jeffreywallace81/pup-scraper`
 
 ## Notes
